@@ -1,0 +1,241 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: "IM Fell DW Pica", serif; 
+    font-weight: 400;
+    font-style: normal;
+    background-color: beige;
+    color: #333; /
+
+}
+
+/* Estilos para el header */
+header {
+    background-color: #7d5a4f; 
+    color: beige; 
+    padding: 10px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border:4px #3e2923 solid ;
+   
+}
+header ul li {
+    font-size: 15px;
+}
+/* Estilos para el título */
+header h1 {
+    margin-left: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    padding-bottom: 5px; /* Espaciado inferior */
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    
+}
+
+nav ul li {
+    display: inline; 
+}
+
+nav ul li a {
+    color: beige;
+    text-decoration: none; 
+    padding: 10px 20px; 
+    display: block; 
+}
+
+nav ul li a:hover {
+    background-color: #a68a74; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el contenido principal */
+main .index{
+    display: flex; /* Me hace dos columnas */
+    flex-direction: column; /* Alinea los elementos en columna */
+    padding: 20px;
+    font-style: normal;
+    font-size: 20px;
+    
+}
+main h2 {
+    text-align:center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    padding-bottom: 5px; /* Espaciado inferior */
+}
+p {
+    font-size: 20px;
+}
+
+
+/*Main de the eras tour */
+
+#tour
+{ 
+    text-align: center;
+    color:#3e2923;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    border-bottom: 2px solid #333; 
+    padding-bottom: 5px; 
+    
+}
+#trailer{
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+/* Estilos para la sección de biografía del index */
+#biography {
+    width: 90%; /* Ancho completo en dispositivos móviles */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+/* Estilos para la imagen */
+#biography img {
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    width: 80%; 
+    height: auto; 
+    margin-left: 50px;
+    margin-right: 50px;
+    
+   
+}
+
+/* imagenes de la galeria */
+div img {
+    display: flex;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    display: grid;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+/* grillas */
+#grid-container3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 5px;
+        
+        }
+.img-cuatro, .img-ocho, .img-nueve {
+        grid-row: 3; /* Establece que estén en la tercera columna */
+    
+}
+
+footer 
+{
+    background-color:  #7d5a4f;
+    color: beige;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: beige;
+    margin: 0 10px;
+    display: flex;
+    display: inline-block;
+}
+footer a:hover
+{ 
+    background-color: #a68a74;
+}
+
+
+/*discos de taytay*/
+#albumes {
+    display: inline-block
+
+    
+}
+
+#grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#grid-item {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Q para ajustar a 3 columnas en desktop */
+@media screen and (min-width: 924px) {
+    #grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #grid-container2 {
+    
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+    }
+    #grid-container3 {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%; 
+        height: auto;
+
+    }
+}
+
+#grid-container2 {
+    display: grid;
+    grid-template-rows: 1fr;
+
+}
+#pict {/*imagen del index*/
+    max-width: 100%; 
+    height: auto;
+}
+
+#parrafos {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+}
+
+.videos body {
+    font-family: "IM Fell DW Pica", serif; 
+    font-weight: 400;
+    font-style: normal;
+    background-color: beige;
+    color: #333; /
+}
+
+
+
+
